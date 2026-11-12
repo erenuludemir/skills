@@ -1,0 +1,8 @@
+{
+  "unittests_exit_code": 0,
+  "unittests_stdout": "",
+  "unittests_stderr": "test_cli_modes_and_output (test_control_center.TestController.test_cli_modes_and_output) ... ok\ntest_legacy_mode (test_control_center.TestController.test_legacy_mode) ... ok\ntest_no_repo (test_control_center.TestController.test_no_repo) ... ok\ntest_no_rpc_by_default (test_control_center.TestController.test_no_rpc_by_default) ... ok\ntest_plan_never_auto_applies (test_control_center.TestController.test_plan_never_auto_applies) ... ok\ntest_production_gate_is_blocked (test_control_center.TestController.test_production_gate_is_blocked) ... ok\ntest_relative_repo_is_rejected (test_control_center.TestController.test_relative_repo_is_rejected) ... ok\ntest_state_contract (test_control_center.TestController.test_state_contract) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 3.800s\n\nOK\n",
+  "validation_exit_code": 0,
+  "validation_stdout": "{\n  \"PASS\": {\n    \"frontmatter\": true,\n    \"original_sha256\": true,\n    \"original_400_lines\": true,\n    \"archive_401_lines\": true,\n    \"source_manifest\": true,\n    \"required_files\": true,\n    \"no_fake_nvidia_signature\": true\n  }\n}\n",
+  "validation_stderr": ""
+}
