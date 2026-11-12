@@ -1,0 +1,17 @@
+{
+  "version": "1.1.1",
+  "upstream_original_main_commit": "d59805503396547363ff0079c436b1cae496e1af",
+  "upstream_original_tracked_files": 6752,
+  "uploaded_readme_sha256": "d384e899b451e53e73ae9113744e7612b1d2ced534ce807b833333bf234e8be3",
+  "original_readme_lines": 400,
+  "archive_reference_lines": 401,
+  "host_deployment_observed": true,
+  "host_static_scan_branch_commit": "6912cd457122bd30c3368f8e6dda5cb04046ac76",
+  "host_static_scan_files_read": 6780,
+  "host_static_scan_errors": 0,
+  "persistent_read_only_automation": "INSTALLED",
+  "financial_production_ready": false,
+  "live_finance_gate": "BLOCKED",
+  "all_ci_checks_pass": false,
+  "third_party_code_runtime_verified": false
+}
