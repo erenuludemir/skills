@@ -35,3 +35,11 @@ The user repository `erenuludemir/skills` is a fork or mirror of the NVIDIA Agen
 
 ## Runbook references
 Read `references/ARCHITECTURE.md`, `references/OPERATIONAL_POLICY.md`, `references/REPOSITORY_AUDIT.md`, `references/VALIDATION.md` and `references/SOURCE_MANIFEST.json` when relevant. Also review `references/README_LINES_001_401.md` on catalog-related tasks. Use `integrations/macos/install_launchagent.sh` only for opt-in local hourly **read-only** observation. Use `integrations/github/` for GitHub Actions CI; never auto-merge into `main`.
+
+
+## Host-verified extension — v1.1.1 (2026-11-12)
+- The linked GitHub repository was cloned to the authorized macOS host. A full tracked-file content read and SHA-256 scan covered 6,780 files on the isolated feature branch, with zero read errors. Read `references/HOST_STATIC_AUDIT_2026-11-12.json` and `references/COMPLETE_SOURCE_INTEGRATION_POLICY.md`. Scan coverage **does not** imply that every skill was executed or audited for semantic vulnerabilities.
+- `scripts/audit_repository.py` provides a repeatable, repository-nonmutating SHA-256 inventory and checks direct child `skills/*/SKILL.md` headers and signature filenames. It never claims to cryptographically validate NVIDIA OMS signatures.
+- GitHub PR #1 and workflow evidence: `references/GITHUB_PR_CI_EVIDENCE_2026-11-12.json`. The existing NVIDIA-derived author verification policy remains a legitimate failing gate; never change author identity or bypass policy to claim PASS.
+- The hourly macOS LaunchAgent was installed and its read-only report observed. The report's overall state is UNKNOWN, while financial production/broadcast is BLOCKED; read `references/MACOS_DEPLOYMENT_EVIDENCE_2026-11-12.json`.
+- Keep all historical evidence and do not silently overwrite source. Additional observation may improve coverage, but agent self-approval cannot enable live transactions or production authority.

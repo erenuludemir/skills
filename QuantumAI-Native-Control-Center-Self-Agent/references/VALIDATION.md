@@ -8,3 +8,6 @@
 6. `git ls-tree -r --name-only HEAD | wc -l` on upstream clone — compare to `references/SOURCE_MANIFEST.json`.
 
 No test in this ZIP can prove production financial readiness, valid upstream NVIDIA signatures, or installation on an uninspected host. All such claims require direct independent attestation.
+
+## v1.1.1 extended validation
+Run `python3 scripts/audit_repository.py --repo /absolute/git/path --output /absolute/evidence.json`. A PASS means every tracked file in that Git checkout was readable and hashed with required root skill file headers and matching signature filenames; it does not verify signature cryptography or system production readiness.

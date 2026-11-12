@@ -17,3 +17,6 @@ Supervisor controls deterministic DAG and audit evidence; Observer collects reso
 
 ## Machine deployment
 Supported macOS deployment script can install a user LaunchAgent for hourly read-only audits if explicitly invoked. The package itself does not claim that launchd installation or host execution has occurred. Production financial gates are deliberately disabled.
+
+## v1.1.1 observed deployment
+macOS LaunchAgent loaded (3600 s); source tree content scan PASS for file coverage; actual production finance status BLOCKED. Reference evidence JSON files, not this note, for exact timestamps.
