@@ -1,0 +1,6 @@
+interface:
+  display_name: Skill Finder & Security Auditor
+  short_description: Trusted skill discovery and review
+  default_prompt: Find skills for my task, assess source reputation and static security risks, and prepare non-destructive installation steps. Do not install third-party tools without authorization.
+policy:
+  allow_implicit_invocation: true

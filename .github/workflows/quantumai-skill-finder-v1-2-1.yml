@@ -1,0 +1,36 @@
+name: QuantumAI Skill Finder v1.2.1 Validation
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'QuantumAI-Native-Control-Center-Self-Agent/releases/1.2.1/**'
+      - '.github/workflows/quantumai-skill-finder-v1-2-1.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: QuantumAI root skill validation
+        run: python3 QuantumAI-Native-Control-Center-Self-Agent/releases/1.2.1/skills/quantumai-native-control-center-self-agent/scripts/validate_skill.py --root QuantumAI-Native-Control-Center-Self-Agent/releases/1.2.1/skills/quantumai-native-control-center-self-agent
+      - name: Control Center original tests
+        run: python3 -m unittest discover -s QuantumAI-Native-Control-Center-Self-Agent/releases/1.2.1/skills/quantumai-native-control-center-self-agent/tests -v
+      - name: Finder source and safety tests
+        run: python3 -m unittest discover -s QuantumAI-Native-Control-Center-Self-Agent/releases/1.2.1/skills/skill-finder-security-auditor/tests -v
+      - name: Verify pinned Vercel upstream Git blob SHA
+        run: |
+          python3 - <<'PY'
+          import pathlib,hashlib
+          p=pathlib.Path("QuantumAI-Native-Control-Center-Self-Agent/releases/1.2.1/skills/skill-finder-security-auditor/references/UPSTREAM_FIND_SKILLS_ORIGINAL.md")
+          b=p.read_bytes()
+          h=hashlib.sha1(b"blob "+str(len(b)).encode()+b"\0"+b).hexdigest()
+          assert h=="a41bdd074bb587afd861332cf2f473f3154de4d7",h
+          print("PASS upstream Git blob",h)
+          PY

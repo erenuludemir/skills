@@ -1,0 +1,14 @@
+{
+  "version": "1.2.1",
+  "verified_upstream_repo": "vercel-labs/skills",
+  "verified_upstream_path": "skills/find-skills/SKILL.md",
+  "git_blob_sha1": "a41bdd074bb587afd861332cf2f473f3154de4d7",
+  "sha256": "c00eeea0e13e74fe4a9d84ba0a8542205a1b736d65f13134fe1a6647eb14976f",
+  "bytes": 5472,
+  "verification": "PASS Git blob object hash",
+  "original_v1_2_0_reference": "references/previous_v1_2_0/UPSTREAM_FIND_SKILLS_ORIGINAL.md",
+  "sandbox_node": "22.16.0",
+  "macos_host_node": "26.12.1",
+  "macos_installed_find_skills": "EXISTS VIA SYMLINK; PRESERVED",
+  "production_finance": "BLOCKED"
+}

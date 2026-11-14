@@ -1,0 +1,16 @@
+{
+  "evidence_type": "macos_full_static_file_content_scan",
+  "timestamp_utc": "2026-11-12T18:38:14.030322+00:00",
+  "source_repo": "erenuludemir/skills",
+  "local_commit_at_scan": "6912cd457122bd30c3368f8e6dda5cb04046ac76",
+  "tracked_files_read": 6780,
+  "readable_files": 6780,
+  "total_bytes_read": 64180977,
+  "sha256_path_content_aggregate": "1f12e4f348facc9d13030e26bf4f9b49ed664f9ba6ab88b1737b0ea541fac791",
+  "read_failures": 0,
+  "skill_frontmatter_missing": 0,
+  "skill_signature_filename_missing": 0,
+  "integrated_by_reference_at": "/Users/erenuludemir/Library/Application Support/QuantumAI-Native-Control-Center-Self-Agent/upstream/skills",
+  "scope": "All tracked files were opened and hashed; cryptographic NVIDIA signature verification, full semantic code review and execution of third-party skills were NOT performed.",
+  "source": "Remote Desktop Commander terminal execution on authorized macOS device"
+}

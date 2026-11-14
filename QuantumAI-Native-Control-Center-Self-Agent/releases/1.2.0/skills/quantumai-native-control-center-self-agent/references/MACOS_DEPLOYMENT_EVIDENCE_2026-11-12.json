@@ -1,0 +1,16 @@
+{
+  "timestamp_utc": "2026-11-12T18:39:00+00:00",
+  "device": "192.168.1.110",
+  "plutil_lint": "PASS",
+  "launchctl_load": "PASS",
+  "launchagent_label": "com.quantumai.native-control-center.readonly",
+  "launchagent_path": "/Users/erenuludemir/Library/LaunchAgents/com.quantumai.native-control-center.readonly.plist",
+  "launchagent_start_interval_seconds": 3600,
+  "read_only_observe_cli": "PASS",
+  "latest_report_present": true,
+  "latest_report_execution_mode": "READ_ONLY",
+  "latest_report_overall": "UNKNOWN",
+  "production_ready": false,
+  "financial_broadcast_gate": "BLOCKED",
+  "reason": "No explicit live-network financial authorization; Bitcoin RPC not configured in scheduled audit."
+}

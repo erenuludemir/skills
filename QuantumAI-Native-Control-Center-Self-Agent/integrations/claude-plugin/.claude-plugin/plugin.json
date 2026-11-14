@@ -1,0 +1,7 @@
+{
+  "name": "quantumai-native-control-center-self-agent",
+  "version": "1.1.0",
+  "description": "Read-only QuantumAI macOS control center diagnostics, evidence, provenance and supervised remediation planning",
+  "author": {"name": "QuantumAI"},
+  "keywords": ["quantumai", "bitcoin-core", "macos", "audit", "agent-skills"]
+}
