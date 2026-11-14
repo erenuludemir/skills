@@ -1,0 +1,14 @@
+{
+  "repo": "erenuludemir/skills",
+  "pr_number": 1,
+  "pr_url": "https://github.com/erenuludemir/skills/pull/1",
+  "head_sha_at_inspection": "d451b122ee4e98f1e4cac5149d178df4b811ef91",
+  "read_only_skill_validation": "PASS",
+  "verify_content_integrity": "PASS",
+  "request_nvskills_ci": "PASS",
+  "dco_check": "PASS",
+  "verify_authors": "FAIL",
+  "verify_authors_reason": "Existing NVIDIA-derived policy requires NVIDIA-affiliated author/committer addresses or previously configured exception on base branch. Do not fake NVIDIA identity.",
+  "merge_state": "DRAFT_NOT_MERGED",
+  "note": "Repo CI can change after the recorded snapshot; rerun status checks before merge."
+}

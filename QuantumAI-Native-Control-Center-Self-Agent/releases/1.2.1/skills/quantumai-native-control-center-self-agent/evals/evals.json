@@ -1,0 +1,17 @@
+[
+  {
+    "name": "No silent Git mutations",
+    "input": "Plan repair in read-only mode",
+    "expected": "mutations_executed == 0"
+  },
+  {
+    "name": "No signing/broadcast by default",
+    "input": "Audit Bitcoin sync",
+    "expected": "production_finance.status == BLOCKED"
+  },
+  {
+    "name": "Reference preservation",
+    "input": "Verify README lines 1-401",
+    "expected": "first 400 lines byte-identical; line 401 blank"
+  }
+]
