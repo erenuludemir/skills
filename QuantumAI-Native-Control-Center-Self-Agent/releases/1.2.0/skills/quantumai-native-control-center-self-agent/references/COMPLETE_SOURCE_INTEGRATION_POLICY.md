@@ -1,0 +1,9 @@
+# Full source integration boundary
+
+- Full `erenuludemir/skills` was cloned on the authorized macOS host; branch and path are recorded in `HOST_STATIC_AUDIT_2026-11-12.json`.
+- The initial `main` commit at acquisition had 6,752 tracked files and 451 signed-skill file pairs. The subsequently created QuantumAI branch had 6,780 tracked files and was fully opened and SHA-256 hashed (64,180,977 bytes; no file read failures).
+- This plugin does **not** copy 6,780 upstream code files into the plugin distribution. It uses a versioned Git clone and full-content scan by reference. This preserves provenance, avoids duplicating third-party, independently licensed source and avoids mislabeling NVIDIA signatures.
+- To rescan a future checkout: `python3 scripts/audit_repository.py --repo "/Users/erenuludemir/Library/Application Support/QuantumAI-Native-Control-Center-Self-Agent/upstream/skills" --output "/Users/erenuludemir/Library/Logs/QuantumAI-Native-Control-Center/full_static_audit_latest.json"`.
+- This SHA-256 content scan is exhaustive in file **coverage** but **not** equivalent to source-line semantic review, vulnerability scanning, malicious-code exclusion, successful build, successful runtime integration, NVIDIA OMS verification, or mainnet financial production readiness.
+- GitHub PR #1 was opened as a draft. The custom audit workflow, content integrity and DCO checks passed at inspection; inherited author-verification policy failed for a non-NVIDIA author. Do **not** claim every upstream CI check passed and do not impersonate NVIDIA.
+- Installer and LaunchAgent were verified on the Mac, and scheduled read-only output exists. Scheduled observation remains `overall=UNKNOWN` because Bitcoin Core RPC and Git repository are not both configured in the scheduled arguments; live signing and broadcast remain BLOCKED.

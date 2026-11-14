@@ -1,0 +1,32 @@
+{
+  "interface": {
+    "displayName": "QuantumAI Native Control Center",
+    "shortDescription": "QuantumAI audit & control",
+    "longDescription": "Evidence-based read-only macOS, Bitcoin Core, Git and agent-runbook workflows. Supports source-integrity checks, decision records and controlled deployment planning. Does not automatically execute financial operations or install background services. Skill Finder & Security Auditor searches trusted registries and assesses source reputation, installs, stars, license, provenance, permissions and code before proposing any external installer.",
+    "developerName": "QuantumAI",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive"
+    ],
+    "defaultPrompt": "Audit my QuantumAI macOS deployment using the H\u0130ZALA \u2192 SIRALA \u2192 E\u015e\u0130TLE \u2192 SAB\u0130TLE procedure; report verified statuses and blockers."
+  },
+  "name": "quantumai-native-control-center-self-agent",
+  "version": "1.2.0",
+  "description": "QuantumAI macOS and Bitcoin Core read-only diagnostics, SHA-256 evidence, GitHub source inventory and supervised repair planning. Includes evidence-first skill discovery, security auditing and controlled Claude Code installation.",
+  "author": {
+    "name": "QuantumAI"
+  },
+  "keywords": [
+    "macos",
+    "bitcoin-core",
+    "read-only",
+    "agent-skills",
+    "github",
+    "find-skills",
+    "skill-discovery",
+    "supply-chain-security",
+    "claude-code"
+  ],
+  "repository": "https://github.com/erenuludemir/skills",
+  "skills": "./skills"
+}

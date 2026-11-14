@@ -1,0 +1,26 @@
+name: QuantumAI Skill Finder v1.2.0 Validation
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'QuantumAI-Native-Control-Center-Self-Agent/releases/1.2.0/**'
+      - '.github/workflows/quantumai-skill-finder-validate.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: QuantumAI Skill Validation
+        run: python3 QuantumAI-Native-Control-Center-Self-Agent/releases/1.2.0/skills/quantumai-native-control-center-self-agent/scripts/validate_skill.py --root QuantumAI-Native-Control-Center-Self-Agent/releases/1.2.0/skills/quantumai-native-control-center-self-agent
+      - name: Original QuantumAI tests
+        run: python3 -m unittest discover -s QuantumAI-Native-Control-Center-Self-Agent/releases/1.2.0/skills/quantumai-native-control-center-self-agent/tests -v
+      - name: Skill Finder tests
+        run: python3 -m unittest discover -s QuantumAI-Native-Control-Center-Self-Agent/releases/1.2.0/skills/skill-finder-security-auditor/tests -v
